@@ -1,0 +1,38 @@
+<div class="container">
+<div class="card">
+    <div class="card-header">
+        <h3>Revisión de Tareas</h3>
+    </div>
+    <div class="card_body">
+        <table class="table table-hover">
+           <thead>
+               <tr class="text-center">
+                   <th>#</th>
+                   <th>Inicio</th>
+                   <th>Descripcion</th>
+                   <th>Tiempo Ejecución</th>
+                   <th>Realizada</th>
+                   <th>Dias pendiente</th>
+                   <th>Asignada</th>
+                   <th>Fecha Final</th>
+               </tr>
+           </thead> 
+           <tbody>
+               <tr *ngFor="let tarea of tareas" class="text-center">
+                   <td>{{tarea.fechaIn}}</td>
+                   <td>{{tarea.identidad}}</td>
+                   <td>{{tarea.descripcion}}</td>
+                   <td>{{tarea.tiempEj}}</td>
+                   <td>{{tarea.status}}</td>
+                   <td>{{tarea.diasP}}</td>
+                   <td>{{tarea.asigna}}</td>
+                   <td>{{tarea.fechaFin}}</td>
+                   <td class="btn btn-warning">Editar</td>
+                   <td class="btn btn-danger">Borrar</td>
+               </tr>
+           </tbody>
+        </table>
+
+    </div>
+</div>
+</div>
